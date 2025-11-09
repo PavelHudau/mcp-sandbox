@@ -1,0 +1,13 @@
+{
+   "mcpServers": {
+    "weather": {
+      "command": "uv",
+      "args": [
+        "--directory",
+        "/Users/pavelhudau/Repo/learning/mcp-sandbox/mcp-server/",
+        "run",
+        "weather.py"
+      ]
+    }
+  }
+}

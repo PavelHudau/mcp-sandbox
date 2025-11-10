@@ -5,7 +5,7 @@ import traceback
 
 serve_params = StdioServerParameters(
     command="Uv",
-    args=["run", "weather.py"],
+    args=["run", "../mcp-server/weather.py"],
 )
 
 async def run():

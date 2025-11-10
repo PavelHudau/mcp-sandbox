@@ -9,3 +9,7 @@ mcp dev weather.py
 ```sh
 mcp install weather.py
 ```
+
+## Links
+
+- [MCP Servers](https://github.com/modelcontextprotocol/servers)

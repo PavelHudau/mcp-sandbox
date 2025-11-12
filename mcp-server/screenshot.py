@@ -1,7 +1,6 @@
 from mcp.server.fastmcp import FastMCP
 from mcp.server.fastmcp.utilities.types import Image
 
-import os
 import pyautogui
 import io
 

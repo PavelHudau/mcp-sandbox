@@ -18,7 +18,7 @@ def capture_screenshot() -> Image:
     try: 
         img_byte_arr = io.BytesIO()
         # if the file exceeds ~1MB, it will be rejected by Claude
-        screenshot = pyautogui. screenshot()
+        screenshot = pyautogui.screenshot()
         screenshot. convert("RGB"). save (img_byte_arr, format="JPEG", quality=60, optimize=True)
         return Image(data=img_byte_arr.getvalue(), format="jpeg")
     except Exception as e:

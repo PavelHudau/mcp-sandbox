@@ -20,15 +20,9 @@ inventory_name_to_id = {
 @mcp.resource("inventory://overview")
 def get_inventory_overview() -> str:
     """
-    Provides an overview of the current inventory items.
+    Provides an overview of the current inventory items (names only).
     """
-    overview = """
-        Some inventory items:
-        - Item 1: Description of item 1
-        - Item 2: Description of item 2
-        - Item 3: Description of item 3 s
-        """
-    return overview.strip()
+    return "\n".join(inventory_name_to_id.keys())
 
 
 @mcp.resource("inventory://{inventory_id}/price")

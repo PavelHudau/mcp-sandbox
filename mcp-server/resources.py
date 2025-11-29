@@ -25,7 +25,7 @@ def get_inventory_overview() -> str:
     return "\n".join(inventory_name_to_id.keys())
 
 
-@mcp.resource("inventory://{inventory_id}/price")
+@mcp.resource("inventory://{inventory_id}/price", name="get price by item id")
 def get_inventory_price_by_id(inventory_id: str) -> float:
     """
     Retrieves the price of an inventory item by its ID.
